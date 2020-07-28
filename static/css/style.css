@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    color: #000;
+    line-height: 16px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 40px;
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 23px;
+}
+
+.main-low-margin {
+  margin-top: 55px;
+}
+
+.circle-body {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 14px auto;
+  border: 5px solid #ada2eb;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+.jumbotron .container .row .col-md-3 .card {
+  transition: all 0.5s;
+}
+
+.jumbotron .container .row .col-md-3 .card:hover {
+  border: 1px solid #337ab7;
+  transform: scale(1.05);
+}
+
+#footer {
+  background-color:#343a40;
+  padding: 30px;
+}
