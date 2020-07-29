@@ -29,38 +29,43 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{url_for('.index')}}">HOME <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link {% block nav_home %}{% endblock %}" href="{{url_for('.index')}}">HOME <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle {% block nav_products %}{% endblock %}" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             PRODUCTS
                         </a>
                         <div class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item text-light" href="#">Injection Mold Components</a>
-                            <a class="dropdown-item text-light" href="#">Stamping Die Components</a>
-                            <a class="dropdown-item text-light" href="#">Hot Runner Components</a>
+                            <a class="dropdown-item text-light" href="{{url_for('.injection_mold')}}">Injection Mold
+                                Components</a>
+                            <a class="dropdown-item text-light" href="{{url_for('.stamping_die')}}">Stamping Die
+                                Components</a>
+                            <a class="dropdown-item text-light" href="{{url_for('.hot_runner')}}">Hot Runner
+                                Components</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CUSTOMIZED</a>
+                        <a class="nav-link {% block nav_customized %}{% endblock %}"
+                            href="{{url_for('.customized')}}">CUSTOMIZED</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">MOLD BASE</a>
+                        <a class="nav-link {% block nav_mold %}{% endblock %}" href="{{url_for('.mold_base')}}">MOLD
+                            BASE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICE</a>
+                        <a class="nav-link {% block nav_services %}{% endblock %}"
+                            href="{{url_for('.company')}}">COMPANY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('.contact')}}">CONTACT</a>
+                        <a class="nav-link {% block nav_contact %}{% endblock %}"
+                            href="{{url_for('.contact')}}">CONTACT</a>
                     </li>
                 </ul>
-                <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form> -->
             </div>
         </div>
     </nav>
@@ -82,7 +87,6 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
                 </p>
-                <button type="submit" class="btn btn-primary">Get Quote</button>
             </div>
             <div class="col-md-4">
                 <h4>Need Help ? Write Us. </h4>
@@ -128,10 +132,8 @@
                 2020 www.yourdomain.com | All Right Reserved
             </div>
         </div>
-
-
     </div>
-
+    <a href="javaScript:;" id="myBtn" class="text-center"><i class="fa fa-2x fa-arrow-circle-up"></i><br>top</a>
     <!--END FOOTER SECTION -->
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
     <!-- CORE JQUERY LIBRARY -->
@@ -139,21 +141,30 @@
 
     <!-- CUSTOM SCRIPT-->
     <script>
-        $(document).ready(function () {
-            $('#slides').slidesjs({
-                width: 940,
-                height: 528,
-                play: {
-                    active: true,
-                    auto: true,
-                    interval: 4000,
-                    swap: true
-                }
+
+        $(function() {
+
+
+            $(window).scroll(function() {
+    
+               var top1 = $(this).scrollTop();    
+    
+               if (top1>200) {    
+    
+                $("#myBtn").fadeIn();
+    
+               }else{
+                    
+                $("#myBtn").fadeOut();
+               }
             });
+    
+            $("#myBtn").click(function(){
+                $("body , html").animate({scrollTop:0},200);  
+            });
+    
         });
-
     </script>
-
 </body>
 
 </html>

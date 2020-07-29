@@ -1,21 +1,27 @@
 body {
-    color: #000;
-    line-height: 16px;
-    font-weight: 400;
-    font-size: 16px;
+  color: #000;
+  line-height: 16px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    line-height: 40px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 40px;
 }
 
 p {
-    line-height: 30px;
-    margin-bottom: 23px;
+  line-height: 30px;
+  margin-bottom: 23px;
 }
 
 .main-low-margin {
-  margin-top: 55px;
+  margin-top: 40px;
+  padding: 20px 0;
 }
 
 .circle-body {
@@ -27,16 +33,37 @@ p {
   background-color: #ffffff;
 }
 
-.jumbotron .container .row .col-md-3 .card {
+.container .row .col-md-3 .card {
   transition: all 0.5s;
 }
 
-.jumbotron .container .row .col-md-3 .card:hover {
+.container .row .col-md-3 .card:hover {
   border: 1px solid #337ab7;
   transform: scale(1.05);
 }
 
 #footer {
-  background-color:#343a40;
+  background-color: #343a40;
   padding: 30px;
+}
+
+/* back to top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: gray;
+  cursor: pointer;
+  padding: 15px;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+#myBtn:hover {
+  color: #555;
+  opacity: 1;
 }
