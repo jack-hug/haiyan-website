@@ -33,11 +33,11 @@ p {
   background-color: #ffffff;
 }
 
-.container .row .col-md-3 .card {
+.container .row .transition_style {
   transition: all 0.5s;
 }
 
-.container .row .col-md-3 .card:hover {
+.container .row .transition_style:hover {
   border: 1px solid #337ab7;
   transform: scale(1.05);
 }
@@ -66,4 +66,17 @@ p {
 #myBtn:hover {
   color: #555;
   opacity: 1;
+}
+
+#dropdown-style:hover {
+  color: #000 !important;
+}
+
+#carouselExampleCaptions {
+  top: 3rem;
+}
+
+.img-height {
+  width: 100%;
+  max-height: 600px !important;
 }

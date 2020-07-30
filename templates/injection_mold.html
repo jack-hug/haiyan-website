@@ -22,101 +22,1223 @@
 <div class="container">
     <div class="row main-low-margin">
         <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+            <div class="card">
+                <div class="card-header font-weight-bold" style="padding-right: 0.9rem;">
+                    Injection Mold Components
+                </div>
+                <div class="list-group list-group-flush" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-spring-list" data-toggle="list"
+                        href="#list-spring" role="tab" aria-controls="spring">Spring Series</a>
+                    <a class="list-group-item list-group-item-action" id="list-guide-list" data-toggle="list"
+                        href="#list-guide" role="tab" aria-controls="guide">Guide Pins&Guide Bush</a>
+                    <a class="list-group-item list-group-item-action" id="list-thimble-list" data-toggle="list"
+                        href="#list-thimble" role="tab" aria-controls="thimble">Ejector Pins&Ejector Sleeves</a>
+                    <a class="list-group-item list-group-item-action" id="list-eject-list" data-toggle="list"
+                        href="#list-eject" role="tab" aria-controls="eject">Ejector Series</a>
+                    <a class="list-group-item list-group-item-action" id="list-cooling-list" data-toggle="list"
+                        href="#list-cooling" role="tab" aria-controls="cooling">Cooling Elements Series</a>
+                    <a class="list-group-item list-group-item-action" id="list-position-list" data-toggle="list"
+                        href="#list-position" role="tab" aria-controls="position">Locating Parts Series</a>
+                    <a class="list-group-item list-group-item-action" id="list-dateStamp-list" data-toggle="list"
+                        href="#list-dateStamp" role="tab" aria-controls="dateStamp">Date Stamps</a>
+                    <a class="list-group-item list-group-item-action" id="list-lock-list" data-toggle="list"
+                        href="#list-lock" role="tab" aria-controls="lock">Latch Locks Series</a>
+                    <a class="list-group-item list-group-item-action" id="list-limit-list" data-toggle="list"
+                        href="#list-limit" role="tab" aria-controls="limit">限位夹</a>
+                    <a class="list-group-item list-group-item-action" id="list-little-list" data-toggle="list"
+                        href="#list-little" role="tab" aria-controls="little">Slide Retainers Series</a>
+                    <a class="list-group-item list-group-item-action" id="list-layering-list" data-toggle="list"
+                        href="#list-layering" role="tab" aria-controls="layering">Guide Strips&Wear plate</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+        <div class="col-md-9">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-spring" role="tabpanel"
+                    aria-labelledby="list-spring-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spring/danqi.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">danqi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spring/DSWB.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DSWB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spring/DSWF.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DSWF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spring/DSWH.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DSWH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spring/DSWL.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DSWL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spring/DSWM.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DSWM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spring/MQB450.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">MQB450</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spring/MQJ1700.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">MQJ1700</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-guide" role="tabpanel" aria-labelledby="list-guide-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/guide/AAPM.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">AAPM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/guide/DAP.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DAP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/guide/EE14.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EE14</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/guide/EE1140.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EE1140</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/guide/EE1325.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EE1325</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/guide/EE1332.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EE1332</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/guide/EEGBZS.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EEGBZS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/guide/GGBE.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">GGBE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/guide/GGBS.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">GGBS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/guide/GGPHL.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">GGPHL</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-eject" role="tabpanel" aria-labelledby="list-eject-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/AAE.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">AAE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/AAKO.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">AAKO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/CCA.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">CCA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/EE1860.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EE1860</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/CCI.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">CCI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/EE.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/MMTGHR.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">MMTGHR</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/TTSTL.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">TTSTL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/SSCZAP.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">SSCZAP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/ZZ169.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ169</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/伸缩柯.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">伸缩柯</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/四瓣弹弓顶针1.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">四瓣弹弓顶针</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/eject/PPS1.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">PPS1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-thimble" role="tabpanel" aria-labelledby="list-thimble-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/AAH.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">AAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/CC-CPJG.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">CC-CPJG</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/CCPHJ.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">CCPHJ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/EEJB-IMH.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EEJB-IMH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/ESS.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ESS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/AAH.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">AAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/N-EETSL&NN-EETSJL.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">N-EETSL&NN-EETSJL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/ZZ40B.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ40B</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/SNI.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">SNI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/ZZ40B.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ40B</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/thimble/ZZ465DH.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ465DH</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-cooling" role="tabpanel" aria-labelledby="list-cooling-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/AAN.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">AAN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/AATN.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">AATN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/BBBS.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">BBBS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/BBTSM.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">BBTSM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/DTW.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DTW</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/EE2222.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EE2222</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/FFSVK.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">FFSVK</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/JJPF.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">JJPF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/MMK120.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">MMK120</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/ZZ89.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ89</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/cooling/ZZ812.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ812</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-position" role="tabpanel" aria-labelledby="list-position-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/AAGS.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">AAGS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/BBGS.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">BBGS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/BBGT.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">BBGT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/EE1306.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EE1306</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/EE1320.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EE1320</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/FFTM.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">FFTM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/FFW45.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">FFW45</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/KY.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">KY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/GGL.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">GGL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/MMT.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">MMT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/PPLF.PPXM.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">PPLF.PPXM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/PPLL.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">PPLL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/position/ZZ05.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ05</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-dateStamp" role="tabpanel" aria-labelledby="list-dateStamp-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/datestamp/DDATI-1000.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DDATI-1000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/datestamp/DDATI-1800.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DDATI-1800</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/datestamp/德标日期章IIA.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">德标日期章IIA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/datestamp/德标日期章ZZ48705.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">德标日期章ZZ48705</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/datestamp/环保章.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">环保章</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/datestamp/日期章DDTNX.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">日期章DDTNX</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/datestamp/日期章FFD.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">日期章FFD</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/datestamp/日期章FFOB.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">日期章FFOB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/datestamp/日期章ZZ48.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">日期章ZZ48</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/datestamp/日期章ZZ4800.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">日期章ZZ4800</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-lock" role="tabpanel" aria-labelledby="list-lock-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/lock/DTP-03.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DTP-03</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/lock/DTP-04.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DTP-04</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/lock/DTP-05.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DTP-05</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/lock/DTP-07.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DTP-07</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/lock/DTP-08.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DTP-08</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/lock/GGS.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">GGS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/lock/KKL.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">KKL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/lock/LLL.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">LLL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/lock/KKU.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">KKU</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/lock/MMPLK.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">MMPLK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-limit" role="tabpanel" aria-labelledby="list-limit-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/limit/BPJ.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">BPJ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/limit/MMRT.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">MMRT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/limit/EE3044.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">EE3044</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/limit/PPSM.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">PPSM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/limit/PPSR.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">PPSR</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/limit/ZZ5140-2.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ5140-2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/limit/RRM.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">RRM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/limit/ZZ5140-0B.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ5140-0B</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/limit/SSLK-8A.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">SSLK-8A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/limit/SSLLK.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">SSLLK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-little" role="tabpanel" aria-labelledby="list-little-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/little/DDPS.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DDPS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/little/OOPS.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">OOPS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/little/TSW2220.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">TSW2220</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/little/ZZ73.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ73</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/little/ZZ73B.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ73B</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/little/ZZ73A.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">ZZ73A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/little/计数器cpl.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">计数器cpl</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/little/计数器cvl.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">计数器cvl</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list-layering" role="tabpanel" aria-labelledby="list-layering-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/layering/DT1485.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DT1485</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/layering/DT1482.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DT1482</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/layering/DT1474.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DT1474</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/layering/DT1472.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DT1472</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/layering/DT1451.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">DT1451</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/layering/CCS30W.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">CCS30W</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/layering/CCKF.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">CCKF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/layering/CCKB.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">CCKB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/layering/CCBP.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">CCBP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/layering/CCBG.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">CCBG</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -22,101 +22,334 @@
 <div class="container">
     <div class="row main-low-margin">
         <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+            <div class="card">
+                <div class="card-header font-weight-bold">
+                    Hot Runner Components
+                </div>
+                <div class="list-group list-group-flush" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-sprue-list" data-toggle="list"
+                        href="#list-sprue" role="tab" aria-controls="sprue">Hot Sprue</a>
+                    <a class="list-group-item list-group-item-action" id="list-manifold-list" data-toggle="list"
+                        href="#list-manifold" role="tab" aria-controls="manifold">Manifold</a>
+                    <a class="list-group-item list-group-item-action" id="list-spare-list" data-toggle="list"
+                        href="#list-spare" role="tab" aria-controls="spare">Spare Parts</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+        <div class="col-md-9">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-sprue" role="tabpanel"
+                    aria-labelledby="list-sprue-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/sprue/Hot_sprue_01.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Hot_sprue_01</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/sprue/Hot_sprue_02.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Hot_sprue_02</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/sprue/Hot_sprue_03.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Hot_sprue_03</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/sprue/Hot_sprue_04.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Hot_sprue_04</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/sprue/Hot_sprue_05.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Hot_sprue_05</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/sprue/Hot_sprue_06.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Hot_sprue_06</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/sprue/Hot_sprue_07.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Hot_sprue_07</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/sprue/Hot_sprue_08.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Hot_sprue_08</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/sprue/Hot_sprue_09.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Hot_sprue_09</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/sprue/Hot_sprue_10.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Hot_sprue_10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-manifold" role="tabpanel" aria-labelledby="list-manifold-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/manifold/manifold_01.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">manifold_01</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/manifold/manifold_02.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">manifold_02</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/manifold/manifold_03.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">manifold_03</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/manifold/manifold_04.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">manifold_04</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/manifold/manifold_05.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">manifold_05</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/manifold/manifold_06.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">manifold_06</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/manifold/manifold_07.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">manifold_07</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/manifold/manifold_08.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">manifold_08</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-3 shadow-sm bg-light" style="width: 13rem;">
-                <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text.</p>
+                <div class="tab-pane fade" id="list-spare" role="tabpanel" aria-labelledby="list-spare-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_01.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_01</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_02.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_02</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_03.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_03</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_04.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_04</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_05.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_05</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_06.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_06</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_07.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_07</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_08.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_08</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_09.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_09</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_10.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_10</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_11.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_11</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3 shadow-sm bg-light transition_style text-center">
+                                <img class="card-img-top"
+                                    src="{{ url_for('static',filename = 'uploads/spare/spare_parts_12.jpg') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">spare_parts_12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
