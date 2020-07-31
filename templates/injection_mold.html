@@ -44,9 +44,9 @@
                     <a class="list-group-item list-group-item-action" id="list-lock-list" data-toggle="list"
                         href="#list-lock" role="tab" aria-controls="lock">Latch Locks Series</a>
                     <a class="list-group-item list-group-item-action" id="list-limit-list" data-toggle="list"
-                        href="#list-limit" role="tab" aria-controls="limit">限位夹</a>
+                        href="#list-limit" role="tab" aria-controls="limit">Slide Retainers Series</a>
                     <a class="list-group-item list-group-item-action" id="list-little-list" data-toggle="list"
-                        href="#list-little" role="tab" aria-controls="little">Slide Retainers Series</a>
+                        href="#list-little" role="tab" aria-controls="little">小零件</a>
                     <a class="list-group-item list-group-item-action" id="list-layering-list" data-toggle="list"
                         href="#list-layering" role="tab" aria-controls="layering">Guide Strips&Wear plate</a>
                 </div>
@@ -1245,3 +1245,15 @@
     </div>
 </div>
 {% endblock %}
+<script>
+    // Javascript to enable link to tab
+    var url = document.location.toString();
+    if (url.match('#')) {
+        $('div#list-tab a[href="#' + url.split('#')[1] + '"]').tab('show');
+    }
+
+    // Change hash for page-reload
+    $('div#list-tab a').on('shown.bs.tab', function (e) {
+        window.location.hash = e.target.hash;
+    })
+</script>

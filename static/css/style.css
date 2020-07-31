@@ -20,7 +20,7 @@ p {
 }
 
 .main-low-margin {
-  margin-top: 40px;
+  margin-top: 3rem;
   padding: 20px 0;
 }
 
@@ -73,10 +73,5 @@ p {
 }
 
 #carouselExampleCaptions {
-  top: 3rem;
-}
-
-.img-height {
-  width: 100%;
-  max-height: 600px !important;
+  margin-top: 3rem;
 }

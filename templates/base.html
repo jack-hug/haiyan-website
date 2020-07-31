@@ -40,11 +40,14 @@
                             PRODUCTS
                         </a>
                         <div class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item text-light" id="dropdown-style" href="{{url_for('.injection_mold')}}">Injection Mold
+                            <a class="dropdown-item text-light" id="dropdown-style"
+                                href="{{url_for('.injection_mold')}}">Injection Mold
                                 Components</a>
-                            <a class="dropdown-item text-light" id="dropdown-style" href="{{url_for('.stamping_die')}}">Stamping Die
+                            <a class="dropdown-item text-light" id="dropdown-style"
+                                href="{{url_for('.stamping_die')}}">Stamping Die
                                 Components</a>
-                            <a class="dropdown-item text-light" id="dropdown-style" href="{{url_for('.hot_runner')}}">Hot Runner
+                            <a class="dropdown-item text-light" id="dropdown-style"
+                                href="{{url_for('.hot_runner')}}">Hot Runner
                                 Components</a>
                         </div>
                     </li>
@@ -142,27 +145,27 @@
     <!-- CUSTOM SCRIPT-->
     <script>
 
-        $(function() {
+        $(function () {
 
 
-            $(window).scroll(function() {
-    
-               var top1 = $(this).scrollTop();    
-    
-               if (top1>200) {    
-    
-                $("#myBtn").fadeIn();
-    
-               }else{
-                    
-                $("#myBtn").fadeOut();
-               }
+            $(window).scroll(function () {
+
+                var top1 = $(this).scrollTop();
+
+                if (top1 > 200) {
+
+                    $("#myBtn").fadeIn();
+
+                } else {
+
+                    $("#myBtn").fadeOut();
+                }
             });
-    
-            $("#myBtn").click(function(){
-                $("body , html").animate({scrollTop:0},200);  
+
+            $("#myBtn").click(function () {
+                $("body , html").animate({ scrollTop: 0 }, 200);
             });
-    
+
         });
     </script>
 </body>
