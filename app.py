@@ -26,7 +26,7 @@ def customized():
 
 @app.route('/Injection_mold')
 def injection_mold():
-    return render_template('injection_mold.html')
+    return render_template('injection_mold.html',set_tab=1)
 
 @app.route('/Stamping_die')
 def stamping_die():
