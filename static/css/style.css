@@ -28,9 +28,13 @@ p {
   width: 150px;
   height: 150px;
   margin: 0 auto 14px auto;
-  border: 5px solid #ada2eb;
+  border: 5px solid #007bff;
   border-radius: 100%;
   background-color: #ffffff;
+}
+
+.circle-body i {
+  color: #343a40;
 }
 
 .container .row .transition_style {

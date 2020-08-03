@@ -1,17 +1,5 @@
 # Virtual environment
-!venv/
-
-venv/*
-!venv/Lib
-
-venv/Lib/*
-!venv/Lib/site-packages
-
-venv/Lib/site-packages/*
-!venv/Lib/site-packages/flask_bootstrap
-
-venv/Lib/site-packages/flask_bootstrap/*
-!venv/Lib/site-packages/flask_bootstrap/templates
+venv
 
 __pycache__
 
