@@ -1,5 +1,5 @@
 body {
-  color: #000;
+  color: #343a40;
   line-height: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -78,4 +78,8 @@ p {
 
 #carouselExampleCaptions {
   margin-top: 3rem;
+}
+
+.jumbotron {
+  margin-bottom: 0 !important;
 }

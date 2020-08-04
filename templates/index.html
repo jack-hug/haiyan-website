@@ -3,11 +3,11 @@
 {% block nav_home %}active{% endblock %}
 
 {% block content %}
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<div id="carouselList" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselList" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselList" data-slide-to="1"></li>
+        <li data-target="#carouselList" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -36,66 +36,76 @@
     </a>
 </div>
 <main>
-    <div class="container">
-        <div class="row main-low-margin text-center">
-            <div class="col-md-4 col-sm-4">
-                <div class="circle-body d-flex align-items-center justify-content-center"><i
-                        class="fa fa-dollar fa-5x"></i></div>
-                <h3>Competitive Pricing</h3>
-                <p>
-                    Our austere management style, lean manufacturing practice and inventory management practices
-                    translate to a total cost advantage that we transfer to our customers. To assure superior
-                    personalized service at the most competitive prices ownership is actively involved with customers.
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="circle-body d-flex align-items-center justify-content-center"><i
-                        class="fa fa-gears fa-5x"></i></div>
-                <h3>High Flexible Manufacturing</h3>
-                <p>
-                    Through ownership and empowered employees decisions are timely and are made with your specific needs
-                    in mind.
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="circle-body d-flex align-items-center justify-content-center"><i
-                        class="fa fa-clock-o fa-5x"></i></div>
-                <h3>Rapid Response time to customer's needs</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                </p>
+    <section>
+        <div class="container">
+            <div class="row main-low-margin text-center">
+                <div class="col-md-4 col-sm-12">
+                    <div class="circle-body d-flex align-items-center justify-content-center"><i
+                            class="fa fa-dollar fa-5x"></i></div>
+                    <h3>Competitive Pricing</h3>
+                    <p class="text-muted">
+                        Our austere management style, lean manufacturing practice and inventory management practices
+                        translate to a total cost advantage that we transfer to our customers. To assure superior
+                        personalized service at the most competitive prices ownership is actively involved with
+                        customers.
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="circle-body d-flex align-items-center justify-content-center"><i
+                            class="fa fa-gears fa-5x"></i></div>
+                    <h3>High Flexible Manufacturing</h3>
+                    <p class="text-muted">
+                        Through ownership and empowered employees decisions are timely and are made with your specific
+                        needs
+                        in mind.
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="circle-body d-flex align-items-center justify-content-center"><i
+                            class="fa fa-clock-o fa-5x"></i></div>
+                    <h3>Rapid Response time to customer's needs</h3>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
     <section class="jumbotron text-center bg-light">
         <div class="container">
-            <h1 class="jumbotron-heading">Presentation</h1>
-            <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it
-                entirely.</p>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mb-3 shadow-sm bg-light transition_style">
-                        <img class="card-img-top" src="{{ url_for('static',filename = 'img/danqi.jpg') }}"
-                            alt="Card image cap">
-                    </div>
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h1>Introduction</h1>
+                    <br>
+                    <h5 class="lead text-left text-primary">Profession</h5>
+                    <p class="text-muted text-left">
+                        For more than 10 years Umold has become a leader in Mold Components in
+                        the sphere of Injection Molding, Stamping Die, Casting Die, Hot Runner and mold base etc and
+                        we’re a preferred supplier for some of the most successful international companies.
+                    </p>
+                    <h5 class="lead text-left text-primary">Diversification</h5>
+                    <p class="text-muted text-left">
+                        Our services include design and fabrication, value-added operations and assembly.
+                    </p>
+                    <h5 class="lead text-left text-primary">Experience</h5>
+                    <p class="text-muted text-left">
+                        Engineering and Project Management are managed by our professional engineers with more than 15
+                        years experiences and well english speaking.
+                    </p>
+                    <h5 class="lead text-left text-primary">Integrity</h5>
+                    <p class="text-muted text-left">
+                        Founded on integrity and stric ethical practices, seeks mutially beneficial relationships with
+                        customers and suppliers that share a like vision on sustainable business.
+                    </p>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mb-3 shadow-sm bg-light transition_style">
-                        <img class="card-img-top" src="{{ url_for('static',filename = 'img/equipment.jpg') }}"
-                            alt="Card image cap">
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="card mb-3 shadow-sm bg-light transition_style">
-                        <img class="card-img-top" src="{{ url_for('static',filename = 'img/DSC_0851.jpg') }}"
-                            alt="Card image cap">
-                    </div>
-                </div>
+                <div class="col-md-5"> <img class="img-fluid rounded mx-auto transition_style" alt="equipment"
+                        src="{{ url_for('static',filename = 'img/equipment.jpg') }}"></div>
             </div>
         </div>
+
     </section>
     <section class="jumbotron text-center bg-white">
         <div class="container">
@@ -109,7 +119,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-12">
                     <div class="card mb-3 shadow-sm bg-light transition_style">
-                        <a href="{{ url_for('.injection_mold')}}">
+                        <a href="{{ url_for('.injection_mold', _anchor = 'list-spring') }}">
                             <img class="card-img-top" src="{{ url_for('static',filename = 'img/二次顶出机构.jpg') }}"
                                 alt="Card image cap">
                         </a>
@@ -120,7 +130,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 col-12">
                     <div class="card mb-3 shadow-sm bg-light transition_style">
-                        <a href="{{ url_for('.injection_mold')}}">
+                        <a href="{{ url_for('.injection_mold', _anchor = 'list-guide')}}">
                             <img class="card-img-top" src="{{ url_for('static',filename = 'img/日期章系列.jpg') }}"
                                 alt="Card image cap"></a>
                         <div class="card-body">

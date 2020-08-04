@@ -170,15 +170,16 @@
         });
     </script>
     <script>
-        var obj_load = {% if set_tab == 1 %}1{%else%} 0{% endif %};
-        tab_load = (obj_load ? "#list-eject" : "#");
+        // Javascript to enable link to tab
+        var url = document.location.toString();
+        if (url.match('#')) {
+            $('div#list-tab a[href="#' + url.split('#')[1] + '"]').tab('show');
+        }
 
-        $(document).ready(function () {
-            if (location.hash || obj_load) {
-                $('a[href=' + (location.hash || tab_load) + ']').tab('show');
-            }
-        });
-
+        // Change hash for page-reload
+        $('div#list-tab a').on('shown.bs.tab', function (e) {
+            window.location.hash = e.target.hash;
+        })
     </script>
 </body>
 
