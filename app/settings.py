@@ -1,6 +1,4 @@
-import os
-from . import app
-
+import os,sys
 
 # SQLite URI compatible
 WIN = sys.platform.startswith('win')
