@@ -1,5 +1,5 @@
 from flask import flash,redirect,url_for,render_template,session
-from unice import app,db
+from . import app,db
 
 
 @app.route('/')
