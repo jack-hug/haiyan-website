@@ -90,30 +90,36 @@
                     Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
                 </p>
             </div>
+            {% for message in get_flashed_messages() %}
+            <div class="alert alert-info">
+                <button class="close" type="button" data-dismiss="alert">&times;</button>
+                {{ message }}
+            </div>
+            {% endfor %}
             <div class="col-md-4">
                 <h4>Need Help ? Write Us. </h4>
                 <hr>
-                <form>
+                <form method="post">
+                    {{ form.csrf_token }}
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" required="required" placeholder="Name">
+                                {{ form.name(class='form-control',placeholder='Name') }}
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" required="required" placeholder="Email address">
+                                {{ form.email(class='form-control',placeholder='Email address') }}
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <div class="form-group">
-                                <textarea name="message" id="message" required="required" class="form-control" rows="3"
-                                    placeholder="Message"></textarea>
+                                    {{ form.body(class='form-control',placeholder='Message',rows ='3') }}
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Submit Request</button>
+                                {{ form.submit(class='btn btn-primary') }}
                             </div>
                         </div>
                     </div>
