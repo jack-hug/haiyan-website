@@ -1,0 +1,33 @@
+﻿{% extends 'base.html' %}
+
+{% block nav_home %}active{% endblock %}
+
+{% block content %}
+<div class="container main-low-margin">
+    <div class="row">
+        <h2 class="text-center">Message Content</h2>
+        <div class="col-md-12">
+            <h5>{{messages|length}} messages</h5>
+        </div>
+    </div>
+    <div class="list-group">
+        {% for message in messages %}
+        <a class="list-group-item list-group-item-action flex-column">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb1 text-success">{{message.name}} ({{ message.email }})
+                    <small class="text-muted"># {{ loop.revindex }}</small>
+                </h5>
+                <small data-toggle="tooltip" data-placement="top"
+                           data-timestamp="{{ message.timestamp.strftime('%Y-%m-%dT%H:%M:%SZ') }}"
+                           data-delay="500">
+                        {{ moment(message.timestamp).fromNow(refresh=True) }}
+                    </small>
+            </div>
+            <p class="mb-1">{{ message.body }}</p>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+<!--END HOME SECTION -->
+{% endblock %}

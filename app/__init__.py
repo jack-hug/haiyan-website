@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
+from flask_moment import Moment
 
 
 app = Flask(__name__)
@@ -11,6 +12,7 @@ app.jinja_env.lstrip_blocks = True
 
 bootstrap = Bootstrap(app)
 db = SQLAlchemy(app)
+moment = Moment(app)
 
 from . import views,errors
 

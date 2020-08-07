@@ -7,4 +7,4 @@ class Message(db.Model):
     body = db.Column(db.String(200))
     name = db.Column(db.String(20))
     email = db.Column(db.String(64))
-    timestamp = db.Column(db.DateTime, default = datetime.now, index = True)
+    timestamp = db.Column(db.DateTime, default = datetime.utcnow)

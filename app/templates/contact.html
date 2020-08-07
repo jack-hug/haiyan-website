@@ -20,6 +20,14 @@
     </div>
 </div>
 <div class="container">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        {{ message }}
+      </div>
+    {% endfor %}
     <div class="row main-low-margin text-center">
         <div class="col-md-5 col-sm-5">
             <div class="circle-body d-flex align-items-center justify-content-center">
@@ -31,27 +39,27 @@
         <div class="col-md-7 col-sm-7">
             <h3>SEND A QUICK QUERY</h3>
             <hr>
-            <form>
+            <form method="POST">
+                {{ form.csrf_token }}
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" required="required" placeholder="Name">
+                            {{ form.name(class='form-control',placeholder='Name') }}
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" required="required" placeholder="Email address">
+                            {{ form.email(class='form-control', placeholder = 'Email Address') }}
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <div class="form-group">
-                            <textarea name="message" id="Textarea1" required="required" class="form-control" rows="7"
-                                placeholder="Message"></textarea>
+                            {{ form.body(class = 'form-control',placeholder = 'Message',rows = '7') }}
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Submit Request</button>
+                            {{ form.submit(class = 'btn btn-primary') }}
                         </div>
                     </div>
                 </div>
