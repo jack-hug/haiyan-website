@@ -14,6 +14,7 @@ bootstrap = Bootstrap(app)
 db = SQLAlchemy(app)
 moment = Moment(app)
 
-from . import views,errors
+
+from . import views,errors,commands
 
 

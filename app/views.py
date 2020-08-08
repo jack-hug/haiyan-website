@@ -18,7 +18,7 @@ def formSubmit():
 
 @app.route('/messages')
 def messages():
-    messages = Message.query.order_by(Message.timestamp.asc()).all()
+    messages = Message.query.order_by(Message.timestamp.desc()).all()
     return render_template('messages.html',messages = messages)
 
 @app.route('/')
