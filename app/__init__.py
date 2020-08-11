@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask,render_template
 from .settings import config
 from .extensions import bootstrap,db,moment
 from .blueprints.auth import auth
