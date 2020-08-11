@@ -1,5 +1,6 @@
 import os,sys
-from app import app
+
+basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 # SQLite URI compatible
 WIN = sys.platform.startswith('win')
@@ -8,8 +9,29 @@ if WIN:
 else:
     prefix = 'sqlite:////'
 
-dev_db = prefix + os.path.join(os.path.dirname(app.root_path),'data.db')
+class BaseConfig(object):
+    SECRET_KEY = os.getenv('SECRET_KEY','Unice precision')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    
 
-SECRET_KEY = os.getenv('SECRET_KEY','Unice precision')
-SQLALCHEMY_TRACK_MODIFICATIONS = False
-SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URI', dev_db)
+class DevelopmentConfig(BaseConfig):
+    DEBUG = True
+    SQLALCHEMY_DATABASE_URI = prefix + os.path.join(basedir,'data-dev.db')
+
+class TestingConfig(BaseConfig):
+    TESTING = True
+    WTF_CSRF_ENABLED = False
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///:memory:'
+
+class ProductionConfig(BaseConfig):
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', prefix + os.path.join(basedir, 'data.db'))
+
+config = {
+    'development': DevelopmentConfig,
+    'production' : ProductionConfig,
+    'testing' : TestingConfig
+}
+
+
+
+
