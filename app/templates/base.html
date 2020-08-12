@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
+    {% block head %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | UP-precision tooling co.,ltd</title>
+    {% block title %}{% endblock %}
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+    {% endblock %}
 </head>
 <!--END HEAD SECTION -->
 
