@@ -39,7 +39,7 @@ def contact():
         db.session.add(message)
         db.session.commit()
         flash('Your message have been sent to admin!')
-        return redirect(url_for('contact'))
+        return redirect(url_for('main.contact'))
         
     return render_template('main/contact.html',form = form)
 
