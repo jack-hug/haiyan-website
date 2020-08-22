@@ -20,8 +20,12 @@ p {
 }
 
 .main-low-margin {
-  margin-top: 3.6rem;
+  margin-top: 4.6rem;
   padding: 20px 0;
+}
+
+.main-low-margin-contact {
+  margin-top: 6rem;
 }
 
 .circle-body {

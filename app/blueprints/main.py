@@ -35,6 +35,7 @@ def contact():
         name = form.name.data
         body = form.body.data
         email = form.email.data
+
         message = Message(name = name, body = body, email = email)
         db.session.add(message)
         db.session.commit()
