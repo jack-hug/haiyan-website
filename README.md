@@ -7,9 +7,12 @@ rename precision
 
 # 未解决问题 
 
-
-
 问题：footer页面的表单需与contact页面同步，且需要封装，不能每个route都写一大段代码。
+Q：wtform的提示语言为中文，需要改为英文
+
+# 0826
+Q：Error:  生成虚拟数据时出现No such command 'forge'.
+A: 需要在__init__.py文件中注册command函数。
 
 # 0819
 问题：head的内容跑到body前，并且自动添加了一个符号&#65279。

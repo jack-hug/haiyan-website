@@ -1,4 +1,4 @@
-import os
+import os,click
 
 from flask import Flask,render_template
 from .settings import config
@@ -6,6 +6,7 @@ from .extensions import bootstrap,db,moment
 from .blueprints.auth import auth
 from .blueprints.admin import admin
 from .blueprints.main import main
+from .models import Message
 
 
 def create_app(config_name=None):
@@ -51,7 +52,28 @@ def register_errors(app):
         return render_template('errors/500.html'), 500
 
 def register_commands(app):
-    pass
+    @app.cli.command()
+    @click.option('--count', default = 20, help = 'Quantity of messages, default is 20...')
+    def forge(count):
+        """Generate fake messages"""
+        from faker import Faker
+        db.drop_all()
+        db.create_all()
+
+        faker = Faker()
+        click.echo('Working...')
+
+        for i in range(count):
+            message = Message(
+                name = faker.name(),
+                body = faker.sentence(),
+                email = faker.email(),
+                timestamp = faker.date_time_this_year()
+            )
+            db.session.add(message)
+
+        db.session.commit()
+        click.echo('Create %d fake messages...' % count)
 
 def register_shell_context(app):
     pass

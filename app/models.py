@@ -1,5 +1,5 @@
 from datetime import datetime
-from . import db
+from .extensions import db
 
 
 class Message(db.Model):
@@ -9,3 +9,11 @@ class Message(db.Model):
     name = db.Column(db.String(20))
     email = db.Column(db.String(64))
     timestamp = db.Column(db.DateTime, default = datetime.utcnow)
+
+class Admin(db.Model):
+    __tablename__ = 'admin'
+    pass
+
+class Category(db.Model):
+    __tablename__ = 'category'
+    pass
