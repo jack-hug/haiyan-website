@@ -6,7 +6,7 @@ from .extensions import bootstrap,db,moment
 from .blueprints.auth import auth
 from .blueprints.admin import admin
 from .blueprints.main import main
-from .models import Message
+from .models import Message,Admin,Injection_Mold_Category
 
 
 def create_app(config_name=None):
@@ -40,7 +40,11 @@ def register_logging(app):
     pass
 
 def register_template_context(app):
-    pass
+    @app.context_processor
+    def mak_template_context():
+        admin = Admin.query.first()
+        injection_categories = Injection_Mold_Category.query.order_by(Injection_Mold_Category.id).all()
+        return dict(admin = admin, injection_categories = injection_categories)
 
 def register_errors(app):
     @app.errorhandler(404)
